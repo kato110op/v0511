@@ -29,23 +29,39 @@
         private void InitializeComponent()
         {
             button1 = new Button();
+            button2 = new Button();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(311, 174);
+            button1.BackColor = Color.FromArgb(255, 128, 128);
+            button1.Font = new Font("Yu Gothic UI", 20F, FontStyle.Italic, GraphicsUnit.Point);
+            button1.ForeColor = Color.FromArgb(64, 0, 0);
+            button1.Location = new Point(200, 200);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(300, 120);
             button1.TabIndex = 0;
             button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(86, 145);
+            button2.Name = "button2";
+            button2.Size = new Size(520, 23);
+            button2.TabIndex = 1;
+            button2.Text = "button2";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(128, 255, 128);
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
             Controls.Add(button1);
             Name = "Form1";
             Text = "Form1";
@@ -55,5 +71,6 @@
         #endregion
 
         private Button button1;
+        private Button button2;
     }
 }
